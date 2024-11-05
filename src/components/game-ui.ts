@@ -34,12 +34,18 @@ class GameUi {
         }
     }
 
+
     private updatePlayerNameUI(playerName: string) {
         const playerNameElement = document.getElementById('player-name-value') as HTMLElement;
         playerNameElement.textContent = playerName;
     }
 
     private updateBeeInfo(bee: Bee) {
+        const beeInfoWrapper = document.getElementById('bee-info-wrapper') as HTMLElement; // Get the wrapper
+        const welcomeMessageElement = document.getElementById('welcome-message') as HTMLElement;
+        welcomeMessageElement.style.display = 'none';
+        beeInfoWrapper.style.display = 'block';
+
         const beeTypeElement = document.getElementById('bee-type') as HTMLElement;
         const beeHealthElement = document.getElementById('bee-health') as HTMLElement;
         const beeDamageElement = document.getElementById('bee-damage') as HTMLElement;
@@ -67,6 +73,12 @@ class GameUi {
     }
 
     private resetGameUI() {
+        const beeInfoWrapper = document.getElementById('bee-info-wrapper') as HTMLElement;
+        const welcomeMessageElement = document.getElementById('welcome-message') as HTMLElement;
+
+        welcomeMessageElement.style.display = 'block';
+        beeInfoWrapper.style.display = 'none';
+
         const beeTypeElement = document.getElementById('bee-type') as HTMLElement;
         const beeHealthElement = document.getElementById('bee-health') as HTMLElement;
         const beeDamageElement = document.getElementById('bee-damage') as HTMLElement;
