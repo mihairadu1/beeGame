@@ -1,0 +1,146 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fffde7, #fff9c4);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+
+h1 {
+    color: #3e2723;
+    margin-bottom: 20px;
+}
+
+
+#player-name-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3e2723;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#action-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    transition: background-color 0.3s;
+}
+
+
+#action-button:hover {
+    background-color: #388e3c;
+}
+
+.game-container {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.bee-info-card {
+    flex: 2;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.bee-info-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bee-info-card img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+}
+
+.bee-info-card #damage-value {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+.hive-health-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+#reset-button {
+    margin-left: 10px; /* Optional spacing between label and button */
+}
+
+
+.hive-info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.hive-health-label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.hive-health-bar {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 30px;
+    background-color: #4CAF50;
+    transition: height 0.5s ease;
+    border-radius: 5px;
+}
+
+
+.alive-bees {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.alive-bees h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.alive-bees ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.alive-bees li {
+    margin: 5px 0;
+}

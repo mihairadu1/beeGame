@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Swarm Game - Play</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="bee-info-card" class="bee-info-card">
+            <div id="bee-type" class="bee-type">Bee Type: -</div>
+            <div id="bee-health" class="bee-health">Health: -</div>
+            <img id="bee-img" class="bee-img" src="" alt="Bee Image" />
+            <div id="bee-damage" class="bee-damage">Damage: -</div>
+        </div>
+
+    <div class="hive-health-container">
+        <div id="hive-health-bar" class="hive-health-bar"></div>
+
+        <div id="player-name">Player: <span id="player-name-value"></span></div>
+
+        <div class="alive-bees">
+            <h3>My Bees</h3>
+            <ul id="alive-bees-list">
+            </ul>
+        </div>
+
+        <div class="hive-info">
+            <div id="hive-health-label" class="hive-health-label">Hive Health: 100%</div>
+            <button id="reset-button">Reset Hive</button>
+        </div>
+    </div>
+    </div>
+
+    <button id="action-button">Hit a Bee</button>
+    
+    <script type="module" src="./src/components/game.ts"></script>
+    <script type="module" src="./src/components/game-ui.ts"></script>
+</body>
+</html>
